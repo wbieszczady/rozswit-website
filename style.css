@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Saturnest';
+    src: url('resources/fonts/Saturnest.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Telegraf';
+    src: url('resources/fonts/Telegraf.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helios';
+    src: url('resources/fonts/Helios.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
