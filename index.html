@@ -7,24 +7,23 @@
     <style>
         @font-face {
             font-family: 'Saturnest';
-            src: url('Saturnest.ttf') format('truetype');
+            src: url('resources/fonts/Saturnest.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
             font-family: 'Telegraf';
-            src: url('Telegraf.otf') format('opentype');
+            src: url('resources/fonts/Telegraf.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
             font-family: 'Helios';
-            src: url('Helios.otf') format('opentype');
+            src: url('resources/fonts/Helios.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
 
-        /* Reset i podstawowe style */
         * {
             margin: 0;
             padding: 0;
@@ -42,7 +41,6 @@
             background-color: #f9f9f9;
         }
         
-        /* Nagłówek */
         header {
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -59,11 +57,12 @@
             padding: 20px 0;
         }
         
-        .logo {
+        .first {
+            background-color: aqua;
             padding: 100px 55px 40px;
         }
         
-        .logo h1 {
+        .first h1 {
             font-family: 'Saturnest', sans-serif;
             text-align: right;
             font-size: 3.2rem;
@@ -71,7 +70,7 @@
             letter-spacing: 2px;
         }
         
-        .logo p {
+        .first p {
             font-family: "Helios", sans-serif;
             text-align: left;
             font-size: 1.9rem;
@@ -79,8 +78,7 @@
             max-width: 800px;
         }
         
-        /* Usługi */
-        .services {
+        .second {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -105,9 +103,8 @@
             color: #333;
         }
         
-        /* O nas */
-        .about {
-            background-color: #fff;
+        .third {
+            background-color: aqua;
             padding: 60px 0;
             margin: 60px 0;
             text-align: center;
@@ -128,16 +125,7 @@
             color: #555;
         }
         
-        /* Stopka */
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 60px;
-        }
         
-        /* Responsywność */
         @media (max-width: 768px) {
             .logo h1 {
                 font-size: 2.5rem;
@@ -171,40 +159,29 @@
 <body>
     
     <main>
-        <section class="logo">
+        <section class="first">
             <h1>ROZŚWIT</h1>
             <p>Wasze ważne momenty<br> zachowane na zawsze w naszych kadrach</p>
         </section>
         
-        <section class="container">
-            <div class="services">
-                <div class="service">
-                    <h3>REPORTAŻ ŚLUBNY</h3>
-                    <img id="img" src="3.jpg">
-                </div>
-                <div class="service">
-                    <h3>SESJE NARZECZEŃSKIE</h3>
-                    <img id="img" src="2.jpg">
-                </div>
-                <div class="service">
-                    <h3>SESJE PORTRETOWE</h3>
-                    <img id="img" src="1.jpg">
-                    
-                </div>
+        <div class="second">
+            <div class="service">
+                <h3>REPORTAŻ ŚLUBNY</h3>
+                <img id="img" src="resources/images/3.jpg">
             </div>
-        </section>
+            <div class="service">
+                <h3>SESJE NARZECZEŃSKIE</h3>
+                <img id="img" src="resources/images/2.jpg">
+            </div>
+            <div class="service">
+                <h3>SESJE PORTRETOWE</h3>
+                <img id="img" src="resources/images/1.jpg">
+            </div>
+        </div>
         
-        <section class="about">
-            <div class="container">
-                <p>Jesteśmy duetem fotografek, które w swojej twórczości cenią autentyczność, oryginalność i swobodę. Szukamy nieoczywistych rozwiązań, nie boimy się pracy ze światłem, kolorem i ruchem. Zapewnimy wam piękne pamiątki w oryginalnym, nowoczesnym stylu.</p>
-            </div>
+        <section class="third">
+            <p>Jesteśmy duetem fotografek, które w swojej twórczości cenią autentyczność, oryginalność i swobodę. Szukamy nieoczywistych rozwiązań, nie boimy się pracy ze światłem, kolorem i ruchem. Zapewnimy wam piękne pamiątki w oryginalnym, nowoczesnym stylu.</p>
         </section>
     </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 ROZŚWIT Fotografia. Wszystkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
 </body>
 </html>
