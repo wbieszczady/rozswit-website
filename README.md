@@ -1,1 +1,1 @@
-# Strona-roz-wit-
+# Kod źródłowy strony rozświt.

@@ -21,3 +21,67 @@
     margin:0;
     padding:0;
 }
+
+body {
+    background-color:rgb(46, 46, 46);
+}
+
+main {
+    background-color: rgb(250, 250, 250);
+    width:60vw;
+    height:100vh;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    background-image: url("resources/images/room.jpg");
+    background-size: 100% 100%;
+    height:33vh;
+}
+
+.button1 {
+    width:50%;
+    float:left;
+    display:flex;
+    justify-content: left;
+    align-items:left;
+    gap: 10px;
+}
+
+.button1 p {
+    font-family: "Saturnest", sans-serif;
+    padding: 20px 0 0 50px ;
+    font-size:20px;
+    color:rgb(229, 229, 229);
+}
+
+.button2 {
+    width:50%;
+    float:right;
+    display:flex;
+    justify-content: right;
+    align-items:right;
+    gap: 10px;
+}
+
+.button2 p {
+    font-family: "Saturnest", sans-serif;
+    padding: 20px 50px 0 0;
+    font-size:20px;
+    color:rgb(229, 229, 229);
+}
+
+
+.middle {
+    background-color: rgb(113, 103, 255);
+    height:33vh;
+}
+
+.footer {
+    background-color:rgb(76, 70, 165);
+    height:34vh;
+}
+
+
